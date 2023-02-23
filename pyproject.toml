@@ -8,6 +8,7 @@ packages = [{include = "vs_assembler"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+pydantic = "^1.10.5"
 
 
 [build-system]
@@ -16,4 +17,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 vs-assembler = "vs_assembler.__main__:main"
-ch_mod = "scripts.set_launch_module:main"
+vchmod = "scripts.set_launch_module:main"
