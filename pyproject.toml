@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "vs-assembler"
+version = "0.1.0"
+description = ""
+authors = ["Grayson Miller <grayson.miller124@gmail.com>"]
+readme = "README.md"
+packages = [{include = "vs_assembler"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+vs-assembler = "vs_assembler.__main__:main"
+ch_mod = "scripts.set_launch_module:main"
